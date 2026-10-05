@@ -53,6 +53,16 @@ Download `CUB_200_2011.tgz` from the dataset page above and extract it so `.\CUB
 `images.txt`, `classes.txt`, `image_class_labels.txt`, `train_test_split.txt`, `bounding_boxes.txt` and the
 `images` and `attributes` folders.
 
+## Pre-trained Model
+The trained model (`model.joblib`, about 53 MB) is too large for this repository.
+Download it here: [model.joblib (Google Drive)](https://drive.google.com/file/d/1B56vmwgwpA9Pgz11I2tSjPQETNhsNkBM/view?usp=drive_link)
+
+After downloading, place `model.joblib` in the project folder, in the same folder as
+`predict.py` and `app.py`. With this file in place you can run the prediction script and
+the web demo without retraining.
+
+Alternatively, you can create your own model by running the training step below.
+
 ## 6. Run
 Run all commands from the project folder.
 ```powershell
