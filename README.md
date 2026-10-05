@@ -1,7 +1,9 @@
 # Bird Species Identification using Machine Learning (CUB-200-2011)
 
 **Course:** UE24CS352A - Machine Learning
-**Project:** Mini-Project 2026
+
+**Mini-Project**
+
 **Section:** I
 
 **Team Members**
