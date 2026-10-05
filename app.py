@@ -8,7 +8,7 @@ from predict import load, predict_array
 
 st.set_page_config(page_title="Bird Species Identifier", page_icon="🐦")
 st.title("🐦 Bird Species Identifier")
-st.caption("Classical ML + ANN (MLP) on hand-crafted features - no deep learning.")
+st.caption("Classical ML + ANN (MLP) on hand-crafted features")
 st.info(
     "This model can choose only among the 200 species in CUB-200-2011. "
     "It does not include owls, peacocks, or bats; unsupported animals may be "
