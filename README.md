@@ -1,7 +1,12 @@
 # Bird Species Identification using Machine Learning (CUB-200-2011)
 
-**Course:** UE24CS352A - Machine Learning, Mini-Project 2026
-**Team:** Vikas Ashok Jadar - PES1UG24CS532, Vijay Kumar N K - PES1UG24CS529 | **Section:** I 
+**Course:** UE24CS352A - Machine Learning
+**Project:** Mini-Project 2026
+**Section:** I
+
+**Team Members**
+- Vikas Ashok Jadar - PES1UG24CS532
+- Vijay Kumar N K - PES1UG24CS529
 
 ## 1. Problem Statement
 Given a photograph of a bird, identify its species (200-class fine-grained classification) using machine
@@ -93,5 +98,5 @@ Training writes `model.joblib` and `results.csv` to the current folder; `predict
 Horizontal-flip augmentation, Fisher vectors, a larger codebook, tuning C/gamma with GridSearchCV, multi-scale HOG.
 
 ## 9. Team Contributions
-- Vikas Ashok Jadar: Built the complete model: feature extraction (colour, HOG, LBP, Bag-of-Visual-Words), model training and selection, ensemble, prediction script and web demo. 
-- Vijay Kumar N K: Provided and prepared the dataset: sourced CUB-200-2011, organised the folder structure, and set up the data for training.
+- **Vikas Ashok Jadar**: Built the complete model: feature extraction (colour, HOG, LBP, Bag-of-Visual-Words), model training and selection, ensemble, prediction script and web demo. 
+- **Vijay Kumar N K**: Provided and prepared the dataset: sourced CUB-200-2011, organised the folder structure, and set up the data for training.
