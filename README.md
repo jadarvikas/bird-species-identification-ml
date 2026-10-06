@@ -62,7 +62,7 @@ Download `CUB_200_2011.tgz` from the dataset page above and extract it so `.\CUB
 
 ## Pre-trained Model
 The trained model (`model.joblib`, about 53 MB) is too large for this repository.
-Download it here: [model.joblib (Google Drive)](https://drive.google.com/file/d/1B56vmwgwpA9Pgz11I2tSjPQETNhsNkBM/view?usp=drive_link)
+Download it here: [model.joblib (Google Drive)](https://drive.google.com/file/d/18HMfBRiR_JeWGz6d2m8HNmWfCCRvxvhP/view?usp=drivesdk)
 
 After downloading, place `model.joblib` in the project folder, in the same folder as
 `predict.py` and `app.py`. With this file in place you can run the prediction script and
