@@ -99,6 +99,8 @@ Training writes `model.joblib` and `results.csv` to the current folder; `predict
 ## 8. Future Work
 Horizontal-flip augmentation, Fisher vectors, a larger codebook, tuning C/gamma with GridSearchCV, multi-scale HOG.
 
-## 9. Team Contributions
-- **Vikas Ashok Jadar**: Built the complete model: feature extraction (colour, HOG, LBP, Bag-of-Visual-Words), model training and selection, ensemble, prediction script and web demo. 
-- **Vijay Kumar N K**: Provided and prepared the dataset: sourced CUB-200-2011, organised the folder structure, and set up the data for training.
+## 10. Team Contributions
+| Member | Contribution |
+|---|---|
+| **Vijay Kumar N K (PES1UG24CS529)** | Gathered and organised the CUB-200-2011 dataset (images, labels, train/test split, bounding boxes and attributes). Ran the training on the full dataset and evaluated the models on the official test split, producing `results.csv`. |
+| **Vikas Ashok Jadar (PES1UG24CS532)** | Designed and built the complete model: feature extraction (colour, HOG, LBP, Bag-of-Visual-Words), model set, AttrStack, ensemble, prediction script and web demo. |
