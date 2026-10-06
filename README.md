@@ -89,14 +89,31 @@ Training writes `model.joblib` and `results.csv` to the current folder; `predict
 `--crop none` (full images), `--crop bbox` (ground-truth boxes, for evaluation only - such a model cannot be used on new photos),
 `--cache`, `--out`, `--jobs`.
 
-
-## 7. Limitations
+## 7. Results
+Evaluated once on the official CUB-200-2011 test split (5,794 images). The raw table is in `results.csv`.
+ 
+| Model | Top-1 % | Top-5 % |
+|---|---|---|
+| Naive Bayes | 5.26 | 14.22 |
+| LDA | 6.64 | 19.71 |
+| Logistic Regression | 7.23 | 21.85 |
+| ANN (MLP) | 8.06 | 22.52 |
+| SVM (RBF) | 8.34 | 22.76 |
+| AttrStack | 8.34 | 25.66 |
+| **ENSEMBLE** | **10.17** | **27.37** |
+ 
+- The ensemble is the best result: about 20x better than random guessing over 200 classes (0.5% top-1, 2.5% top-5).
+- AttrStack has the best top-5 among single models.
+- KNN and Random Forest are implemented but were skipped in this run (`--skip RandomForest,KNN`) to save time.
+The raw output of `train.py` is saved in [`results.csv`](results.csv).
+- 
+## 8. Limitations
 - Only the 200 species in CUB-200-2011 are supported; other birds and animals (e.g. owls, peacocks, bats) are
   assigned the nearest known species.
 - Automatic GrabCut cropping can fail on cluttered backgrounds.
 - Fine-grained species differ in subtle cues, so top-5 accuracy is noticeably higher than top-1.
 
-## 8. Future Work
+## 9. Future Work
 Horizontal-flip augmentation, Fisher vectors, a larger codebook, tuning C/gamma with GridSearchCV, multi-scale HOG.
 
 ## 10. Team Contributions
